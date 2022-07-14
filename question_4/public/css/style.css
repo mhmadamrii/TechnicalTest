@@ -1,0 +1,249 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+
+body {
+    background-color: black !important;
+    font-size: 62.5%;
+    color: white
+}
+
+nav{
+    width: 100%;
+    height: 7vh;
+    background-color: black;
+    display: flex;
+    padding-top: 1rem;
+    /* border: 1px solid red; */
+}
+
+nav .left{
+    flex: 50%;
+    display: flex;
+    align-items: center;
+}
+
+nav .left h1{
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: rgba(53, 53, 224, 0.982);
+    font-weight: bold;
+}
+
+nav .right{
+    flex:50%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: end;
+    padding-right: 5rem
+}
+
+nav .right button{
+    padding: 0.5rem;
+    background-color: rgba(53, 53, 224, 0.982);
+    border-radius: 0.3rem;
+    font-size: 0.8rem;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+nav .right button:hover{
+    cursor: pointer;
+    background-color: rgba(53, 53, 224, 0.982);
+}
+/* index */
+.container{
+    padding: 1rem;
+}
+
+.container h2{
+    margin-left: 6.6rem;
+    font-size: 2rem;
+}
+
+.container select{
+    color: black;
+}
+
+.cardContainer{
+    padding: 2rem 2rem;
+    display: flex;
+    gap: 6.3rem;
+    width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+    border: 1px solid rgba(53, 53, 224, 0.982);
+    border-radius: 5px;
+    margin-bottom: 7rem;
+    margin-top: 1rem;
+}
+
+.cardContainer button{
+    width: 12.5rem;
+    background-color: rgba(53, 53, 224, 0.982);
+    border: none;
+    margin-top: 0.5rem;
+    border-radius: 0.2rem;
+    font-weight: bold;
+    padding: 0.2rem 0rem;
+    color: white;
+}
+
+.cardContainer button:hover{
+    cursor: pointer;
+    background-color: rgba(53, 53, 224, 0.982);
+}
+
+.card{
+    width: 10rem;
+    height: 20rem;
+    padding: 1rem;
+    border: 0.2rem solid rgba(53, 53, 224, 0.982);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.card .image{
+    width: 10rem;
+    margin: auto;
+}
+
+.card img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.card h1{
+    margin-top: 2rem;
+    text-align: center;
+    color: rgba(53, 53, 224, 0.982);
+}
+
+.card p{
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+}
+
+.formContainer{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    margin: auto;
+    margin-top: 10rem;
+}
+
+.formContainer input{
+    width: 100%;
+    /* border: 1px solid red; */
+    margin: 1rem;
+    padding: 0.2rem 0.5rem;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.formContainer select{
+    width: 100%;
+    margin: 1rem;
+    padding: 0.2rem 0.5rem;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.formContainer label{
+    margin-left: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.formContainer button{
+    width: 5rem;
+    background-color: rgba(53, 53, 224, 0.982);
+    border: none;
+    border-radius: 0.3rem;
+    margin: 0rem 0.2rem;
+    float: end;
+    position: relative;
+    left: 35.5rem;
+    color: white;
+    padding: 10px 20px;
+}
+
+.formContainer button:hover{
+    cursor: pointer;
+    background-color: rgba(53, 53, 224, 0.982);
+}
+
+.formContainer a{
+    background-color: rgba(53, 53, 224, 0.982);
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 0.3rem;
+    margin: 0rem 0.2rem;
+    float: end;
+    position: relative;
+    left: 35.5rem;
+    font-size: 0.8rem;;
+}
+
+/* add province  */
+
+/* province detail  */
+
+.detailContainer{
+    width: 100%;
+    padding: 2rem 0rem;
+}
+
+.detailContainer img{
+    width: 30%
+}
+
+.detailContainer h1{
+    font-size: 4rem;
+    text-align: center;
+}
+
+.detailContainer p{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.detailContainer .detailButton{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.detailContainer a{
+    padding: 0.5rem 1.2rem;
+    background-color: blue;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.detailContainer #delete{
+    background-color: red;
+    border-radius: 5px;
+}
+
+.detailContainer #edit{
+    background-color: rgb(13, 133, 39);
+    border-radius: 5px;
+}
+
+.detailContainer .image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

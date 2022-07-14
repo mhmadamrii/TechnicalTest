@@ -1,15 +1,19 @@
 {
-  "dependencies": {
-    "express": "^4.18.1",
-    "mysql": "^2.18.1"
-  },
-  "name": "question-4",
+  "name": "soal-4",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "technical test",
+  "main": "index.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.mjs"
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "express": "^4.18.1",
+    "hbs": "^4.2.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.19"
+  }
 }

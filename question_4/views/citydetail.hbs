@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    {{#each kabupaten}}
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{this.nama}}</title>
+        <link rel="stylesheet" href="/public/css/style.css">
+    </head>
+    <body>
+        <div class="detailContainer">
+            
+                <div class="image">
+                    <img src={{this.photo}} alt="">
+                </div>
+                <h1>{{this.nama}}</h1>
+                <p>{{this.diresmikan}}</p>
+                <div class="detailButton">
+                <a href="/">Back</a>
+                <a href="/delete-city/{{this.id}}" id="delete">Delete</a>
+                <a href="/update-city/{{this.id}}" id="edit">Edit</a>
+            </div>
+            {{/each}}
+        </div>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Update Kabupaten</title>
+        <link rel="stylesheet" href="/public/css/style.css">
+    </head>
+    <body>
+        <div class="formContainer">
+            {{#each kabupaten}}
+                <form action="/updatecity/{{id}}" method="POST" enctype='multipart/form-data'>
+                <label for="">Nama Kabupaten</label>
+                <input type="text" placeholder="Nama Kabupaten/Kota" id="nama" name="nama" value="{{this.nama}}">
+                <label for="">Tanggal Diresmikan</label>
+                <input type="text" placeholder="Tanggal Diresmikan" id="diresmikan" name="diresmikan" value={{this.diresmikan}}>
+                <input type="text" name="provinsi" value={{this.provinsi_id}} hidden>
+                <label for="">Logo Kabupaten</label>
+                <input type="file" id="photo" name="photo" value={{this.photo}}>
+                <a href="/">Back</a>
+                <button type="submit">Submit</button>
+            </form>
+            {{/each}}
+        </div>
+    </body>
+</html>

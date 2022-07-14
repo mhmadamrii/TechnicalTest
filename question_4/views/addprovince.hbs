@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add Provinsi</title>
+        <link rel="stylesheet" href="/public/css/style.css">
+    </head>
+    <body>
+        <div class="formContainer">
+            <form action="/addprovince" method="POST" enctype='multipart/form-data'>
+                <label for="">Nama Provinsi</label>
+                <input type="text" placeholder="Nama Provinsi" id="nama" name="nama">
+                <label for="">Tanggal Diresmikan</label>
+                <input type="text" placeholder="Tanggal Diresmikan" id="diresmikan" name="diresmikan">
+                <label for="">Pulau</label>
+                <input type="text" placeholder="Pulau" id="pulau" name="pulau">
+                <label for="">Logo Provinsi</label>
+                <input type="file" id="photo" name="photo">
+                <a href="/">Back</a>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>

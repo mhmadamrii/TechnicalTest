@@ -1,5 +1,6 @@
 const sortNumbers = (array) => {
     for (let i = 0; i < array.length; i++) {
+        console.log(array.length)
         for (let  j = 0; j < array.length; j++) {
             // swap numbers logic
             if (array[j] > array[j + 1]) {
